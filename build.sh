@@ -1,10 +1,10 @@
 #!/bin/bash
 
-BASE_VER=".Trinity"
+BASE_VER="Trinity"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
-# export LOCALVERSION="."`echo $KERNEL_VER`
+export LOCALVERSION="-"`echo $KERNEL_VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
 
 export ARCH=arm
