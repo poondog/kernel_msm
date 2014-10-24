@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_VER=" "
+BASE_VER="xx"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
@@ -19,7 +19,7 @@ echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
-make -j4
+make -j2
 
 DATE_END=$(date +"%s")
 echo
