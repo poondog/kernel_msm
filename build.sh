@@ -19,7 +19,7 @@ echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
-make -j2
+make -j1 CONFIG_DEBUG_SECTION_MISMATCH=y
 
 DATE_END=$(date +"%s")
 echo
