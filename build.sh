@@ -1,10 +1,10 @@
 #!/bin/bash
 
-BASE_VER="xx"
+BASE_VER="hC-b48"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
-# export LOCALVERSION="."`echo $KERNEL_VER`
+export LOCALVERSION="-"`echo $KERNEL_VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
 
 export ARCH=arm
@@ -13,13 +13,13 @@ export KBUILD_BUILD_USER=poondoge
 
 DATE_START=$(date +"%s")
 
-make "flo_defconfig"
+make "hells_defconfig"
 
 echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
-make -j2
+make -j1
 
 DATE_END=$(date +"%s")
 echo
