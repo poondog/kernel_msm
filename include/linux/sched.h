@@ -2840,7 +2840,7 @@ static inline unsigned long rlimit_max(unsigned int limit)
 extern unsigned long task_get_effective_timer_slack(struct task_struct *tsk);
 #else
 static inline unsigned long task_get_effective_timer_slack(
-  		struct task_struct *tsk)
+		struct task_struct *tsk)
 {
 	return tsk->timer_slack_ns;
 }
