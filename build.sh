@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_VER="hC-b52"
+BASE_VER="hC-b53"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
