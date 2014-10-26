@@ -303,13 +303,12 @@ static int cpufreq_governor_smartmax(struct cpufreq_policy *policy,
 #ifndef CONFIG_CPU_FREQ_DEFAULT_GOV_SMARTMAX
 static
 #endif
-struct cpufreq_governor cpufreq_gov_smartmax = { 
-    .name = "smartmax", 
-    .governor = cpufreq_governor_smartmax, 
-    .max_transition_latency = TRANSITION_LATENCY_LIMIT, 
+struct cpufreq_governor cpufreq_gov_smartmax = {
+    .name = "smartmax",
+    .governor = cpufreq_governor_smartmax,
+    .max_transition_latency = TRANSITION_LATENCY_LIMIT,
     .owner = THIS_MODULE,
     };
-
 
 static inline u64 get_cpu_iowait_time(unsigned int cpu, u64 *wall) {
 	u64 iowait_time = get_cpu_iowait_time_us(cpu, wall);
