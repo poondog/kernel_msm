@@ -260,9 +260,7 @@ static struct acpu_level tbl_faster[] __initdata = {
 
 static struct acpu_level tbl_PVS0_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   950000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   950000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   950000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   950000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   950000 },
@@ -281,9 +279,7 @@ static struct acpu_level tbl_PVS0_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS1_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   950000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   950000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   950000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   950000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   950000 },
@@ -302,9 +298,7 @@ static struct acpu_level tbl_PVS1_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS2_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   925000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   925000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   925000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   925000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   925000 },
@@ -323,9 +317,7 @@ static struct acpu_level tbl_PVS2_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS3_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   900000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   900000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   900000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   900000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   900000 },
@@ -344,9 +336,7 @@ static struct acpu_level tbl_PVS3_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS4_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   875000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   875000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   875000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   875000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   875000 },
@@ -365,9 +355,7 @@ static struct acpu_level tbl_PVS4_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS5_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   875000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   875000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   875000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   875000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   875000 },
@@ -386,9 +374,7 @@ static struct acpu_level tbl_PVS5_1512MHz[] __initdata = {
 
 static struct acpu_level tbl_PVS6_1512MHz[] __initdata = {
 #ifdef CONFIG_CPU_UNDERCLOCK
-	{ 1, {    94500, HFPLL, 2, 0x07 }, L2(0),   875000 },
 	{ 1, {   189000, HFPLL, 2, 0x0E }, L2(0),   875000 },
-	{ 1, {   243000, HFPLL, 2, 0x12 }, L2(0),   875000 },
 #endif
 	{ 1, {   384000, PLL_8, 0, 0x00 }, L2(0),   875000 },
 	{ 1, {   486000, HFPLL, 2, 0x24 }, L2(5),   875000 },
