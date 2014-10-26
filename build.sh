@@ -10,6 +10,7 @@ export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
 export ARCH=arm
 export SUBARCH=arm
 export KBUILD_BUILD_USER=poondoge
+export KBUILD_BUILD_HOST="hellssgod"
 
 DATE_START=$(date +"%s")
 
@@ -19,7 +20,7 @@ echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
-make -j1
+make -j2
 
 DATE_END=$(date +"%s")
 echo
