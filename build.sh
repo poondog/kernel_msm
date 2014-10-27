@@ -10,7 +10,7 @@ export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
 export ARCH=arm
 export SUBARCH=arm
 export KBUILD_BUILD_USER=poondoge
-export KBUILD_BUILD_HOST="hellssgod"
+export KBUILD_BUILD_HOST="hellscore"
 
 DATE_START=$(date +"%s")
 
