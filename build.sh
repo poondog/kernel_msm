@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_VER="Semaphore_N4_1.5.0"
+BASE_VER="Semaphore_N7_1.5.0"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
@@ -14,7 +14,7 @@ export KBUILD_BUILD_HOST="semaphore.gr"
 
 DATE_START=$(date +"%s")
 
-make "semaphore_mako_defconfig"
+make "flo_defconfig"
 
 echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
