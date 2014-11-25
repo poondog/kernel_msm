@@ -17,6 +17,21 @@ echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
+echo -e "\e[95m ---------------------------------------------------------------------"
+echo -e "\e[95m                                                      "
+echo -e "\e[97m                         Kangaroo Kernel              "
+echo -e "\e[95m                                                      "
+echo -e "\e[95m                            _,'  ___                  "
+echo -e "\e[95m                          <__\__/   \                 "
+echo -e "\e[95m                             \_  /  _\                "
+echo -e "\e[95m                                \,\ / \\               "
+echo -e "\e[95m                                  //   \\              "
+echo -e "\e[95m                                ,/'     '\_,          "
+echo -e "\e[95m                                                      "
+echo -e "\e[95m                                                      "
+echo -e "\e[95m ---------------------------------------------------------------------"
+echo -e "\033[0m"
+
 make -j2
 
 DATE_END=$(date +"%s")
