@@ -1,8 +1,6 @@
 #!/bin/bash
 
-BASE_VER="KANGAROO"
-VER=""
-KERNEL_VER=$BASE_VER$VER
+VER="KANGAROO"
 
 export LOCALVERSION="."`echo $VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
