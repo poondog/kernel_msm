@@ -2,7 +2,7 @@
 
 VER="KANGAROO"
 
-export LOCALVERSION="."`echo $VER`
+export LOCALVERSION="-"`echo $VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
 
 export ARCH=arm
