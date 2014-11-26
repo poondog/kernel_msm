@@ -1,16 +1,5 @@
 #!/bin/bash
 
-VER="KANGAROO"
-
-export LOCALVERSION="-"`echo $VER`
-export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
-
-export ARCH=arm
-export SUBARCH=arm
-export KBUILD_BUILD_USER=poondoge
-
-DATE_START=$(date +"%s")
-
 echo -e "\e[93m                                                      "
 echo -e "\e[93m        _   __                                        "
 echo -e "\e[93m       | | / /                                        "
@@ -28,6 +17,16 @@ echo -e "\e[93m                    | |\  \  __/ |  | | | |  __/ |  "
 echo -e "\e[93m                    \_| \_/\___|_|  |_| |_|\___|_|  "
 echo -e "\e[93m                                                    "
 echo -e "\033[0m                                                   "
+
+VER="KANGAROO"
+
+DATE_START=$(date +"%s")
+export LOCALVERSION="-"`echo $VER`
+export CROSS_COMPILE=${HOME}/Toolchains/arm-eabi-4.7/bin/arm-eabi-
+
+export ARCH=arm
+export SUBARCH=arm
+export KBUILD_BUILD_USER=poondoge
 
 make "flo_defconfig"
 
