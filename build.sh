@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo -e "\e[95m                                                      "
+# The font colors are predefined in this array. Color will choose one at random
+FONT_COLORS=(31 32 33 34 35 36 91 92 93 94 95 96 97)
+COLOR=$(($RANDOM % ${#FONT_COLORS[@]}))
+
+echo -e "\e[${FONT_COLORS[$COLOR]}m "
 echo "        _   __                                        "
 echo "       | | / /                                        "
 echo "       | |/ /  __ _ _ __   __ _  __ _ _ __ ___   ___  "
@@ -33,8 +37,9 @@ make "flo_defconfig"
 make -j2
 
 DATE_END=$(date +"%s")
-echo
 DIFF=$(($DATE_END - $DATE_START))
+
+echo
 if (( $(($DIFF / 60)) == 0 )); then
 	echo "  Build completed in $(($DIFF % 60)) seconds."
 elif (( $(($DIFF / 60)) == 1 )); then
