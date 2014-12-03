@@ -47,5 +47,5 @@ elif (( $(($DIFF / 60)) == 1 )); then
 else
 	echo "  Build completed in $(($DIFF / 60)) minutes and $(($DIFF % 60)) seconds."
 fi
-echo "  $(date +"%r")"
+echo "  Finish time: $(date +"%r")"
 echo
